@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tip calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+ <script data-require="jquery@3.1.1" data-semver="3.1.1" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+
+</head>
+<body>
+<div class="box">	
+<div class="container">
+
+	<div id ="bill_calc">
+		<table border="">
+			<tr>
+				<td>
+		<form name = "calculator" id ="calculator">
+
+			<div class ="field-container1">	
+      <label for ="bill">Bill</label>
+  			 </br>
+         <input id = "bill" type="number" name="bill" placeholder="$" value = "1" min ="1" required/>
+          
+      </div>
+  		</div>
+
+  		<div class ="field-container1">
+  				<label for ="percent">Tip %</label>
+  			  </br>
+  				<div class="quantity buttons_added">
+               <input type="button" value="-" class="minus">
+               <input id= "percent" type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="" placeholder="%">
+              <input type="button" value="+" class="plus">
+          </div>
+  		</div>
+
+
+  		<div class ="field-container1">
+  				<label for ="people">Number of People</label>
+  			  </br>
+  				<div class="quantity buttons_added">
+          <input type="button" value="-" class="minus">
+          <input id= "people" type="number" step="1" min="1" max="" name="quantity" value="2" title="Qty" class="input-text qty text" size="4" pattern="" inputmode="">
+         <input type="button" value="+" class="plus">
+      </div>
+  		</div>
+
+
+  		<div class="button-container">
+  				<button type="submit" name="calculate" id="btn-calc">Calculate</button>
+  		</div>
+		</form>
+	</td>
+
+	<td>
+	</div>
+	<div id = "result_cal">
+		<form name="result" id = "result">
+			<div class ="field-container">
+  				<label for ="Tip"><B>Tip</B> per person</label>
+  				<input id = "Tip" type="number" name="Tip" placeholder="0" disabled/>
+  			</div>
+  			<div class ="field-container">
+  				<label for ="Total_per_person"><B>Total</B> per person</label>
+  				<input id = "Total_per_person" type="number" name="Total_per_person" placeholder="0" disabled/>
+  			</div>
+			
+		</form>
+	</div>
+</td>
+</table>
+
+</div>
+</div>
+
+
+<script src="calculate.js" type="application/javascript"></script>
+</body>
+</html>
